@@ -1,6 +1,7 @@
 package kvstore
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"time"
@@ -31,4 +32,10 @@ func (kv *KeyValueStore) GetHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprint(w, value)
+}
+
+func (kv *KeyValueStore) DashboardHandler(w http.ResponseWriter, r *http.Request) {
+	status := kv.GetStatus()
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(status)
 }
