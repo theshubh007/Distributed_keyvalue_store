@@ -1,6 +1,6 @@
 # Distributed Key-Value Store
 
-This project implements a distributed key-value store using Go, demonstrating various important concepts like concurrency, mutexes, and sharding. Here are the key concepts used in the project, along with the relevant variable names and locations in the code.
+This project implements a distributed key-value store using Go.
 
 ## Problem It Solves
 
