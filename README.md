@@ -51,7 +51,7 @@ Sharding divides the key-value store into smaller units (shards). Replication cr
 #### 1.Clone the repository:
 
 ```
-
+https://github.com/theshubh007/Distributed_keyvalue_store
 ```
 
 #### 2.Run the server:
